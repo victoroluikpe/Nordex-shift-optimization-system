@@ -1,0 +1,376 @@
+[2026-08-05 12:37:27,994 - INFO - starting data loading process from the database file]
+[2026-08-05 12:37:35,899 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 12:37:35,900 - INFO - Data loading process complted successfull]
+[2026-08-05 16:58:23,021 - INFO - starting data loading process from the database file]
+[2026-08-05 16:58:31,075 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 16:58:31,076 - INFO - Data loading process complted successfull]
+[2026-08-05 16:58:31,396 - INFO - starting data loading process from the database file]
+[2026-08-05 16:58:38,336 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 16:58:38,337 - INFO - Data loading process complted successfull]
+[2026-08-05 16:58:38,337 - INFO - starting data validation process]
+[2026-08-05 16:58:38,337 - INFO - Data validation class initialized sucessfully.]
+[2026-08-05 16:58:38,338 - INFO - checking if the dataframe is empty]
+[2026-08-05 16:58:38,338 - INFO - The data frame is not empty. processing with validation]
+[2026-08-05 16:58:38,338 - INFO - checking for missing values in the datafram]
+[2026-08-05 16:58:38,767 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-05 16:58:38,768 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-05 16:58:38,768 - ERROR - Error occured during data validation: 'DataFrame' object has no attribute 'duplicate']
+[2026-08-05 17:00:52,753 - INFO - starting data loading process from the database file]
+[2026-08-05 17:00:59,993 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 17:00:59,994 - INFO - Data loading process complted successfull]
+[2026-08-05 17:01:00,310 - INFO - starting data loading process from the database file]
+[2026-08-05 17:01:08,447 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 17:01:08,464 - INFO - Data loading process complted successfull]
+[2026-08-05 17:01:08,467 - INFO - starting data validation process]
+[2026-08-05 17:01:08,467 - INFO - Data validation class initialized sucessfully.]
+[2026-08-05 17:01:08,468 - INFO - checking if the dataframe is empty]
+[2026-08-05 17:01:08,468 - INFO - The data frame is not empty. processing with validation]
+[2026-08-05 17:01:08,468 - INFO - checking for missing values in the datafram]
+[2026-08-05 17:01:09,383 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-05 17:01:09,386 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-05 17:01:09,388 - ERROR - Error occured during data validation: 'DataFrame' object has no attribute 'duplicate']
+[2026-08-05 17:02:15,811 - INFO - starting data loading process from the database file]
+[2026-08-05 17:02:23,002 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 17:02:23,002 - INFO - Data loading process complted successfull]
+[2026-08-05 17:02:23,324 - INFO - starting data loading process from the database file]
+[2026-08-05 17:02:31,280 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 17:02:31,280 - INFO - Data loading process complted successfull]
+[2026-08-05 17:02:31,280 - INFO - starting data validation process]
+[2026-08-05 17:02:31,280 - INFO - Data validation class initialized sucessfully.]
+[2026-08-05 17:02:31,281 - INFO - checking if the dataframe is empty]
+[2026-08-05 17:02:31,281 - INFO - The data frame is not empty. processing with validation]
+[2026-08-05 17:02:31,281 - INFO - checking for missing values in the datafram]
+[2026-08-05 17:02:31,730 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-05 17:02:31,730 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-05 17:02:32,832 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-05 17:02:32,832 - INFO - Data validation process completed successfully]
+[2026-08-05 17:59:23,364 - INFO - starting data loading process from the database file]
+[2026-08-05 17:59:31,922 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 17:59:31,923 - INFO - Data loading process complted successfull]
+[2026-08-05 17:59:32,223 - INFO - starting data loading process from the database file]
+[2026-08-05 17:59:39,663 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 17:59:39,663 - INFO - Data loading process complted successfull]
+[2026-08-05 17:59:39,664 - INFO - starting data validation process]
+[2026-08-05 17:59:39,664 - INFO - Data validation class initialized sucessfully.]
+[2026-08-05 17:59:39,664 - INFO - checking if the dataframe is empty]
+[2026-08-05 17:59:39,664 - INFO - The data frame is not empty. processing with validation]
+[2026-08-05 17:59:39,664 - INFO - checking for missing values in the datafram]
+[2026-08-05 17:59:40,090 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-05 17:59:40,090 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-05 17:59:41,320 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-05 17:59:41,320 - INFO - Data validation process completed successfully]
+[2026-08-05 18:00:41,408 - INFO - starting data loading process from the database file]
+[2026-08-05 18:00:49,758 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 18:00:49,759 - INFO - Data loading process complted successfull]
+[2026-08-05 18:00:50,061 - INFO - starting data loading process from the database file]
+[2026-08-05 18:00:57,285 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 18:00:57,285 - INFO - Data loading process complted successfull]
+[2026-08-05 18:00:57,286 - INFO - starting data validation process]
+[2026-08-05 18:00:57,286 - INFO - Data validation class initialized sucessfully.]
+[2026-08-05 18:00:57,286 - INFO - checking if the dataframe is empty]
+[2026-08-05 18:00:57,286 - INFO - The data frame is not empty. processing with validation]
+[2026-08-05 18:00:57,287 - INFO - checking for missing values in the datafram]
+[2026-08-05 18:00:57,732 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-05 18:00:57,733 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-05 18:00:58,755 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-05 18:00:58,756 - INFO - Data validation process completed successfully]
+[2026-08-05 19:18:00,244 - INFO - starting data loading process from the database file]
+[2026-08-05 19:18:07,323 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-05 19:18:07,324 - INFO - Data loading process complted successfull]
+[2026-08-05 19:18:07,324 - INFO - starting data validation process]
+[2026-08-05 19:18:07,324 - INFO - Data validation class initialized sucessfully.]
+[2026-08-05 19:18:07,324 - INFO - checking if the dataframe is empty]
+[2026-08-05 19:18:07,324 - INFO - The data frame is not empty. processing with validation]
+[2026-08-05 19:18:07,324 - INFO - checking for missing values in the datafram]
+[2026-08-05 19:18:07,738 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-05 19:18:07,739 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-05 19:18:08,684 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-05 19:18:08,684 - INFO - Data validation process completed successfully]
