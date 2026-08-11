@@ -14,8 +14,8 @@ from src.exception import MyException
 logging = configure_logger()
 
 class Feature_Engineering:
-    def __init__(self, shift_data: pd.DataFrame):
-        self.shift_data = shift_data
+    def __init__(self, df: pd.DataFrame):
+        self.shift_data = df
         logging.info("feature engineering initialized")
 
     def Engineer_Features(self):
@@ -50,7 +50,7 @@ class Feature_Engineering:
             logging.error(f"error occurred while engineering new features {e}")
             raise MyException(e, sys)
         ### Feature selection
-    def Feature_selection(self):
+    def Feature_Selection(self):
         try:
             schema = read_yaml(SCHEMA_PATH)
             columns_to_drop = schema['columns']['columns_to_drop']
@@ -91,16 +91,18 @@ def start_feature_engineering(shift_data: pd.DataFrame):
 
         return X_train, X_test, y_train, y_test
     except Exception as e:
-        raise MyException (e, sys)    
+        logging.error("error occured during features engineering initalization....")
+        raise MyException (e, sys)
+            
                
             
-            
+         
 shift_data = load_data()
-shift_data = validate_data(shift_data)
-shift_data = start_data_preprocessing(shift_data= shift_data)
-X_train, X_test, y_train, y_test = start_feature_engineering(shift_data)
+Validated_data = validate_data(shift_data)
+Processed_data = start_data_preprocessing(Validated_data)
+X_train, X_test, y_train, y_test = start_feature_engineering(Processed_data)
 print("feature engineering completed...")
 print (X_train.head())
-print(X_test.head())
+print(X_test.head)
 
 start_feature_engineering

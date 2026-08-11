@@ -21,7 +21,7 @@ class MyException(Exception):
     custom exception class that provides detailed error messages.
 
     """
-    def _init_(self, error_message: str, error_detail: sys):
+    def __init__(self, error_message: str, error_detail: sys):
 
         # aclling the base class constructor
         super().__init__(error_message)

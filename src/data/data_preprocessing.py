@@ -50,7 +50,7 @@ class DataPreprocessing:
             duplicates = self.shift_data.duplicated().sum()
 
             if duplicates > 0:
-                logging.warming(f"removing {duplicates} duplicated rows")
+                logging.warning(f"removing {duplicates} duplicated rows")
                 self.shift_data.drop_duplicates(inplace= True)
 
             return self.shift_data    

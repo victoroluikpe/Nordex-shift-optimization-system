@@ -72,6 +72,6 @@ def validate_data(df: pd.DataFrame):
 
     
 
-shift_data = load_data()
-validate_data(shift_data)
+#shift_data = load_data()
+#validate_data(shift_data)
            

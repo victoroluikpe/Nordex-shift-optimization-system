@@ -759,3 +759,2230 @@ timestamp                 0
 data                      0
 dtype: int64]
 [2026-08-09 02:14:57,113 - INFO - data preprocessing completed.]
+[2026-08-09 16:03:06,254 - INFO - starting data loading process from the database file]
+[2026-08-09 16:03:14,923 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-09 16:03:14,923 - INFO - Data loading process complted successfull]
+[2026-08-09 16:03:14,924 - INFO - starting data validation process]
+[2026-08-09 16:03:14,924 - INFO - Data validation class initialized sucessfully.]
+[2026-08-09 16:03:14,924 - INFO - checking if the dataframe is empty]
+[2026-08-09 16:03:14,925 - INFO - The data frame is not empty. processing with validation]
+[2026-08-09 16:03:14,925 - INFO - checking for missing values in the datafram]
+[2026-08-09 16:03:15,474 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-09 16:03:15,474 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-09 16:03:16,526 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-09 16:03:16,528 - INFO - Data validation process completed successfully]
+[2026-08-09 16:03:23,628 - INFO - starting data loading process from the database file]
+[2026-08-09 16:03:32,442 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-09 16:03:32,442 - INFO - Data loading process complted successfull]
+[2026-08-09 16:03:32,443 - INFO - starting data validation process]
+[2026-08-09 16:03:32,444 - INFO - Data validation class initialized sucessfully.]
+[2026-08-09 16:03:32,445 - INFO - checking if the dataframe is empty]
+[2026-08-09 16:03:32,446 - INFO - The data frame is not empty. processing with validation]
+[2026-08-09 16:03:32,446 - INFO - checking for missing values in the datafram]
+[2026-08-09 16:03:32,884 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-09 16:03:32,885 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-09 16:03:34,288 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-09 16:03:34,290 - INFO - Data validation process completed successfully]
+[2026-08-09 16:03:34,291 - INFO - Data preprocessing initialized....]
+[2026-08-09 16:03:34,293 - INFO - starting the data preprocessing pipeline...]
+[2026-08-09 16:03:36,131 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-09 16:03:37,231 - INFO - data preprocessing completed.]
+[2026-08-09 16:03:37,326 - INFO - feature engineering initialized]
+[2026-08-09 16:03:37,326 - INFO - starting feature engineering...]
+[2026-08-09 16:03:37,708 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-09 06:00:00 2026-08-09 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-09 16:10:33,579 - INFO - starting data loading process from the database file]
+[2026-08-09 16:10:42,541 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-09 16:10:42,541 - INFO - Data loading process complted successfull]
+[2026-08-09 16:10:42,542 - INFO - starting data validation process]
+[2026-08-09 16:10:42,542 - INFO - Data validation class initialized sucessfully.]
+[2026-08-09 16:10:42,542 - INFO - checking if the dataframe is empty]
+[2026-08-09 16:10:42,542 - INFO - The data frame is not empty. processing with validation]
+[2026-08-09 16:10:42,543 - INFO - checking for missing values in the datafram]
+[2026-08-09 16:10:43,003 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-09 16:10:43,003 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-09 16:10:43,966 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-09 16:10:43,966 - INFO - Data validation process completed successfully]
+[2026-08-09 16:10:47,658 - INFO - starting data loading process from the database file]
+[2026-08-09 16:10:55,905 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-09 16:10:55,905 - INFO - Data loading process complted successfull]
+[2026-08-09 16:10:55,905 - INFO - starting data validation process]
+[2026-08-09 16:10:55,906 - INFO - Data validation class initialized sucessfully.]
+[2026-08-09 16:10:55,906 - INFO - checking if the dataframe is empty]
+[2026-08-09 16:10:55,906 - INFO - The data frame is not empty. processing with validation]
+[2026-08-09 16:10:55,906 - INFO - checking for missing values in the datafram]
+[2026-08-09 16:10:56,324 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-09 16:10:56,325 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-09 16:10:57,323 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-09 16:10:57,323 - INFO - Data validation process completed successfully]
+[2026-08-09 16:10:57,323 - INFO - Data preprocessing initialized....]
+[2026-08-09 16:10:57,324 - INFO - starting the data preprocessing pipeline...]
+[2026-08-09 16:10:58,913 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-09 16:10:59,907 - INFO - data preprocessing completed.]
+[2026-08-09 16:10:59,994 - INFO - feature engineering initialized]
+[2026-08-09 16:10:59,994 - INFO - starting feature engineering...]
+[2026-08-09 16:11:00,443 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-09 06:00:00 2026-08-09 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-09 23:13:29,765 - INFO - starting data loading process from the database file]
+[2026-08-09 23:13:38,232 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-09 23:13:38,233 - INFO - Data loading process complted successfull]
+[2026-08-09 23:13:38,233 - INFO - starting data validation process]
+[2026-08-09 23:13:38,233 - INFO - Data validation class initialized sucessfully.]
+[2026-08-09 23:13:38,233 - INFO - checking if the dataframe is empty]
+[2026-08-09 23:13:38,234 - INFO - The data frame is not empty. processing with validation]
+[2026-08-09 23:13:38,234 - INFO - checking for missing values in the datafram]
+[2026-08-09 23:13:38,669 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-09 23:13:38,669 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-09 23:13:39,617 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-09 23:13:39,617 - INFO - Data validation process completed successfully]
+[2026-08-09 23:13:39,617 - INFO - Data preprocessing initialized....]
+[2026-08-09 23:13:39,618 - INFO - starting the data preprocessing pipeline...]
+[2026-08-09 23:13:41,256 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-09 23:13:42,244 - INFO - data preprocessing completed.]
+[2026-08-09 23:13:42,245 - INFO - feature engineering initialized]
+[2026-08-09 23:13:42,246 - INFO - starting feature engineering...]
+[2026-08-09 23:13:42,620 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-09 06:00:00 2026-08-09 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-09 23:13:42,687 - ERROR - error occured during features engineering initalization....]
+[2026-08-09 23:24:43,828 - INFO - starting data loading process from the database file]
+[2026-08-09 23:24:50,739 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-09 23:24:50,739 - INFO - Data loading process complted successfull]
+[2026-08-09 23:24:50,739 - INFO - starting data validation process]
+[2026-08-09 23:24:50,739 - INFO - Data validation class initialized sucessfully.]
+[2026-08-09 23:24:50,739 - INFO - checking if the dataframe is empty]
+[2026-08-09 23:24:50,739 - INFO - The data frame is not empty. processing with validation]
+[2026-08-09 23:24:50,739 - INFO - checking for missing values in the datafram]
+[2026-08-09 23:24:51,156 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-09 23:24:51,156 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-09 23:24:52,229 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-09 23:24:52,230 - INFO - Data validation process completed successfully]
+[2026-08-09 23:24:52,230 - INFO - Data preprocessing initialized....]
+[2026-08-09 23:24:52,230 - INFO - starting the data preprocessing pipeline...]
+[2026-08-09 23:24:53,808 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-09 23:24:54,756 - INFO - data preprocessing completed.]
+[2026-08-09 23:24:54,757 - INFO - feature engineering initialized]
+[2026-08-09 23:24:54,757 - INFO - starting feature engineering...]
+[2026-08-09 23:24:55,119 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-09 06:00:00 2026-08-09 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-09 22:00:00 2026-08-10 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-09 23:24:55,186 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 00:00:36,548 - INFO - starting data loading process from the database file]
+[2026-08-10 00:00:43,504 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 00:00:43,505 - INFO - Data loading process complted successfull]
+[2026-08-10 00:00:43,505 - INFO - starting data validation process]
+[2026-08-10 00:00:43,505 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 00:00:43,506 - INFO - checking if the dataframe is empty]
+[2026-08-10 00:00:43,506 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 00:00:43,506 - INFO - checking for missing values in the datafram]
+[2026-08-10 00:00:43,950 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 00:00:43,951 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 00:00:44,864 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 00:00:44,864 - INFO - Data validation process completed successfully]
+[2026-08-10 00:00:44,864 - INFO - Data preprocessing initialized....]
+[2026-08-10 00:00:44,864 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 00:00:46,323 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 00:00:47,262 - INFO - data preprocessing completed.]
+[2026-08-10 00:00:47,263 - INFO - feature engineering initialized]
+[2026-08-10 00:00:47,264 - INFO - starting feature engineering...]
+[2026-08-10 00:00:47,631 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 00:00:47,741 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 00:11:45,581 - INFO - starting data loading process from the database file]
+[2026-08-10 00:11:52,460 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 00:11:52,461 - INFO - Data loading process complted successfull]
+[2026-08-10 00:11:52,461 - INFO - starting data validation process]
+[2026-08-10 00:11:52,461 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 00:11:52,462 - INFO - checking if the dataframe is empty]
+[2026-08-10 00:11:52,462 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 00:11:52,462 - INFO - checking for missing values in the datafram]
+[2026-08-10 00:11:52,873 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 00:11:52,873 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 00:11:53,926 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 00:11:53,926 - INFO - Data validation process completed successfully]
+[2026-08-10 00:11:53,927 - INFO - Data preprocessing initialized....]
+[2026-08-10 00:11:53,927 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 00:11:55,438 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 00:11:56,387 - INFO - data preprocessing completed.]
+[2026-08-10 00:11:56,387 - INFO - feature engineering initialized]
+[2026-08-10 00:11:56,387 - INFO - starting feature engineering...]
+[2026-08-10 00:11:56,751 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 00:11:56,926 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 11:23:43,341 - INFO - starting data loading process from the database file]
+[2026-08-10 11:23:50,323 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 11:23:50,323 - INFO - Data loading process complted successfull]
+[2026-08-10 11:23:50,323 - INFO - starting data validation process]
+[2026-08-10 11:23:50,323 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 11:23:50,323 - INFO - checking if the dataframe is empty]
+[2026-08-10 11:23:50,324 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 11:23:50,324 - INFO - checking for missing values in the datafram]
+[2026-08-10 11:23:50,751 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 11:23:50,751 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 11:23:51,923 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 11:23:51,925 - INFO - Data validation process completed successfully]
+[2026-08-10 11:23:51,925 - INFO - Data preprocessing initialized....]
+[2026-08-10 11:23:51,926 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 11:23:53,699 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 11:23:54,678 - INFO - data preprocessing completed.]
+[2026-08-10 11:23:54,679 - INFO - feature engineering initialized]
+[2026-08-10 11:23:54,679 - INFO - starting feature engineering...]
+[2026-08-10 11:23:55,042 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 11:23:55,154 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 11:32:58,113 - INFO - starting data loading process from the database file]
+[2026-08-10 11:33:04,896 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 11:33:04,897 - INFO - Data loading process complted successfull]
+[2026-08-10 11:33:04,897 - INFO - starting data validation process]
+[2026-08-10 11:33:04,897 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 11:33:04,898 - INFO - checking if the dataframe is empty]
+[2026-08-10 11:33:04,898 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 11:33:04,898 - INFO - checking for missing values in the datafram]
+[2026-08-10 11:33:05,295 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 11:33:05,295 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 11:33:06,223 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 11:33:06,224 - INFO - Data validation process completed successfully]
+[2026-08-10 11:33:06,224 - INFO - Data preprocessing initialized....]
+[2026-08-10 11:33:06,224 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 11:33:07,744 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 11:33:08,694 - INFO - data preprocessing completed.]
+[2026-08-10 11:33:08,694 - INFO - feature engineering initialized]
+[2026-08-10 11:33:08,694 - INFO - starting feature engineering...]
+[2026-08-10 11:33:09,049 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 11:33:09,114 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 11:33:09,114 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 11:33:09,115 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 11:41:35,500 - INFO - starting data loading process from the database file]
+[2026-08-10 11:41:42,252 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 11:41:42,252 - INFO - Data loading process complted successfull]
+[2026-08-10 11:41:42,252 - INFO - starting data validation process]
+[2026-08-10 11:41:42,253 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 11:41:42,253 - INFO - checking if the dataframe is empty]
+[2026-08-10 11:41:42,253 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 11:41:42,254 - INFO - checking for missing values in the datafram]
+[2026-08-10 11:41:42,699 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 11:41:42,700 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 11:41:43,620 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 11:41:43,620 - INFO - Data validation process completed successfully]
+[2026-08-10 11:41:43,620 - INFO - Data preprocessing initialized....]
+[2026-08-10 11:41:43,620 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 11:41:45,105 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 11:41:46,075 - INFO - data preprocessing completed.]
+[2026-08-10 11:41:46,076 - INFO - feature engineering initialized]
+[2026-08-10 11:41:46,076 - INFO - starting feature engineering...]
+[2026-08-10 11:41:46,439 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 11:41:46,566 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 11:41:46,566 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 11:41:46,567 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 11:53:50,425 - INFO - starting data loading process from the database file]
+[2026-08-10 11:53:57,296 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 11:53:57,297 - INFO - Data loading process complted successfull]
+[2026-08-10 11:53:57,297 - INFO - starting data validation process]
+[2026-08-10 11:53:57,298 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 11:53:57,298 - INFO - checking if the dataframe is empty]
+[2026-08-10 11:53:57,298 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 11:53:57,298 - INFO - checking for missing values in the datafram]
+[2026-08-10 11:53:57,721 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 11:53:57,721 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 11:53:58,620 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 11:53:58,621 - INFO - Data validation process completed successfully]
+[2026-08-10 11:53:58,621 - INFO - Data preprocessing initialized....]
+[2026-08-10 11:53:58,622 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 11:54:00,115 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 11:54:01,068 - INFO - data preprocessing completed.]
+[2026-08-10 11:54:01,068 - INFO - feature engineering initialized]
+[2026-08-10 11:54:01,069 - INFO - starting feature engineering...]
+[2026-08-10 11:54:01,436 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 11:54:01,545 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 11:54:01,546 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 11:54:01,546 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 14:02:03,867 - INFO - starting data loading process from the database file]
+[2026-08-10 14:02:11,557 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 14:02:11,558 - INFO - Data loading process complted successfull]
+[2026-08-10 14:02:11,559 - INFO - starting data validation process]
+[2026-08-10 14:02:11,560 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 14:02:11,560 - INFO - checking if the dataframe is empty]
+[2026-08-10 14:02:11,560 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 14:02:11,560 - INFO - checking for missing values in the datafram]
+[2026-08-10 14:02:11,991 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 14:02:11,991 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 14:02:12,973 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 14:02:12,973 - INFO - Data validation process completed successfully]
+[2026-08-10 14:02:12,973 - INFO - Data preprocessing initialized....]
+[2026-08-10 14:02:12,974 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 14:02:14,732 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 14:02:15,764 - INFO - data preprocessing completed.]
+[2026-08-10 14:02:15,765 - INFO - feature engineering initialized]
+[2026-08-10 14:02:15,765 - INFO - starting feature engineering...]
+[2026-08-10 14:02:16,261 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 14:02:16,331 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 14:02:16,332 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 14:02:16,332 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 14:08:38,689 - INFO - starting data loading process from the database file]
+[2026-08-10 14:08:45,590 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 14:08:45,590 - INFO - Data loading process complted successfull]
+[2026-08-10 14:08:45,590 - INFO - starting data validation process]
+[2026-08-10 14:08:45,591 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 14:08:45,591 - INFO - checking if the dataframe is empty]
+[2026-08-10 14:08:45,592 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 14:08:45,592 - INFO - checking for missing values in the datafram]
+[2026-08-10 14:08:46,057 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 14:08:46,057 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 14:08:47,003 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 14:08:47,003 - INFO - Data validation process completed successfully]
+[2026-08-10 14:08:47,004 - INFO - Data preprocessing initialized....]
+[2026-08-10 14:08:47,004 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 14:08:48,505 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 14:08:49,444 - INFO - data preprocessing completed.]
+[2026-08-10 14:08:49,445 - INFO - feature engineering initialized]
+[2026-08-10 14:08:49,445 - INFO - starting feature engineering...]
+[2026-08-10 14:08:49,803 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 14:08:49,868 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 14:08:49,869 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 14:08:49,869 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 14:10:32,314 - INFO - starting data loading process from the database file]
+[2026-08-10 14:10:38,889 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 14:10:38,890 - INFO - Data loading process complted successfull]
+[2026-08-10 14:10:38,890 - INFO - starting data validation process]
+[2026-08-10 14:10:38,890 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 14:10:38,891 - INFO - checking if the dataframe is empty]
+[2026-08-10 14:10:38,891 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 14:10:38,891 - INFO - checking for missing values in the datafram]
+[2026-08-10 14:10:39,303 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 14:10:39,303 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 14:10:40,254 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 14:10:40,254 - INFO - Data validation process completed successfully]
+[2026-08-10 14:10:40,254 - INFO - Data preprocessing initialized....]
+[2026-08-10 14:10:40,254 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 14:10:41,696 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 14:10:42,636 - INFO - data preprocessing completed.]
+[2026-08-10 14:10:42,636 - INFO - feature engineering initialized]
+[2026-08-10 14:10:42,637 - INFO - starting feature engineering...]
+[2026-08-10 14:10:42,986 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 14:10:43,095 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 14:10:43,096 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 14:10:43,096 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: 'Feature_Engineering' object has no attribute 'Feature_Selection']
+[2026-08-10 14:27:54,660 - INFO - starting data loading process from the database file]
+[2026-08-10 14:28:03,825 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 14:28:03,825 - INFO - Data loading process complted successfull]
+[2026-08-10 14:28:03,826 - INFO - starting data validation process]
+[2026-08-10 14:28:03,826 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 14:28:03,826 - INFO - checking if the dataframe is empty]
+[2026-08-10 14:28:03,827 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 14:28:03,827 - INFO - checking for missing values in the datafram]
+[2026-08-10 14:28:04,264 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 14:28:04,264 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 14:28:05,212 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 14:28:05,212 - INFO - Data validation process completed successfully]
+[2026-08-10 14:28:05,213 - INFO - Data preprocessing initialized....]
+[2026-08-10 14:28:05,213 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 14:28:06,931 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 14:28:07,928 - INFO - data preprocessing completed.]
+[2026-08-10 14:28:07,968 - INFO - feature engineering initialized]
+[2026-08-10 14:28:08,026 - INFO - starting feature engineering...]
+[2026-08-10 14:28:08,452 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 14:28:08,549 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 14:28:08,549 - ERROR - error occurred during feature selection]
+[2026-08-10 14:28:08,550 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 55]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 14:28:08,550 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 55]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 14:28:08,551 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 14:28:08,551 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 55]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 14:50:31,559 - INFO - starting data loading process from the database file]
+[2026-08-10 14:50:38,728 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 14:50:38,728 - INFO - Data loading process complted successfull]
+[2026-08-10 14:50:38,728 - INFO - starting data validation process]
+[2026-08-10 14:50:38,728 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 14:50:38,729 - INFO - checking if the dataframe is empty]
+[2026-08-10 14:50:38,729 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 14:50:38,729 - INFO - checking for missing values in the datafram]
+[2026-08-10 14:50:39,153 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 14:50:39,153 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 14:50:40,114 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 14:50:40,115 - INFO - Data validation process completed successfully]
+[2026-08-10 14:50:40,115 - INFO - Data preprocessing initialized....]
+[2026-08-10 14:50:40,115 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 14:50:41,703 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 14:50:42,703 - INFO - data preprocessing completed.]
+[2026-08-10 14:50:42,703 - INFO - feature engineering initialized]
+[2026-08-10 14:50:42,703 - INFO - starting feature engineering...]
+[2026-08-10 14:50:43,083 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 14:50:43,157 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 14:50:43,157 - ERROR - error occurred during feature selection]
+[2026-08-10 14:50:43,157 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 55]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 14:50:43,157 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 55]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 14:50:43,158 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 14:50:43,158 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 55]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 15:03:58,433 - INFO - starting data loading process from the database file]
+[2026-08-10 15:04:07,189 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 15:04:07,189 - INFO - Data loading process complted successfull]
+[2026-08-10 15:04:07,190 - INFO - starting data validation process]
+[2026-08-10 15:04:07,190 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 15:04:07,190 - INFO - checking if the dataframe is empty]
+[2026-08-10 15:04:07,190 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 15:04:07,190 - INFO - checking for missing values in the datafram]
+[2026-08-10 15:04:07,600 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 15:04:07,600 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 15:04:08,557 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 15:04:08,557 - INFO - Data validation process completed successfully]
+[2026-08-10 15:04:08,557 - INFO - Data preprocessing initialized....]
+[2026-08-10 15:04:08,558 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 15:04:10,125 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 15:04:11,094 - INFO - data preprocessing completed.]
+[2026-08-10 15:04:11,095 - INFO - feature engineering initialized]
+[2026-08-10 15:04:11,095 - INFO - starting feature engineering...]
+[2026-08-10 15:04:11,489 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 15:04:11,559 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 15:04:11,559 - ERROR - error occurred during feature selection]
+[2026-08-10 15:04:11,559 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 55]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 15:04:11,560 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 55]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 15:04:11,560 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 15:04:11,560 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 55]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\utils\schema_loader.py, at line: 10]: module 'yaml' has no attribute 'safe']
+[2026-08-10 16:19:55,965 - INFO - starting data loading process from the database file]
+[2026-08-10 16:20:04,359 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 16:20:04,360 - INFO - Data loading process complted successfull]
+[2026-08-10 16:20:04,360 - INFO - starting data validation process]
+[2026-08-10 16:20:04,361 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 16:20:04,361 - INFO - checking if the dataframe is empty]
+[2026-08-10 16:20:04,362 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 16:20:04,362 - INFO - checking for missing values in the datafram]
+[2026-08-10 16:20:04,782 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 16:20:04,783 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 16:20:05,758 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 16:20:05,759 - INFO - Data validation process completed successfully]
+[2026-08-10 16:20:05,759 - INFO - Data preprocessing initialized....]
+[2026-08-10 16:20:05,759 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 16:20:07,342 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 16:20:08,333 - INFO - data preprocessing completed.]
+[2026-08-10 16:20:08,334 - INFO - feature engineering initialized]
+[2026-08-10 16:20:08,334 - INFO - starting feature engineering...]
+[2026-08-10 16:20:08,711 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 16:20:08,944 - INFO - Data preprocessing initialized....]
+[2026-08-10 16:20:09,418 - ERROR - error occured when dropping duplicated values 'RootLogger' object has no attribute 'warming']
+[2026-08-10 16:20:09,418 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-10 16:20:09,419 - ERROR - error occurred during feature selection]
+[2026-08-10 16:20:09,419 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-10 16:20:09,419 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-10 16:20:09,420 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 16:20:09,421 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-10 17:14:38,322 - INFO - starting data loading process from the database file]
+[2026-08-10 17:14:48,383 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 17:14:48,384 - INFO - Data loading process complted successfull]
+[2026-08-10 17:14:48,384 - INFO - starting data validation process]
+[2026-08-10 17:14:48,387 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 17:14:48,388 - INFO - checking if the dataframe is empty]
+[2026-08-10 17:14:48,388 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 17:14:48,389 - INFO - checking for missing values in the datafram]
+[2026-08-10 17:14:49,057 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 17:14:49,058 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 17:14:50,416 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 17:14:50,417 - INFO - Data validation process completed successfully]
+[2026-08-10 17:14:50,417 - INFO - Data preprocessing initialized....]
+[2026-08-10 17:14:50,418 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 17:14:52,372 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 17:14:53,531 - INFO - data preprocessing completed.]
+[2026-08-10 17:14:53,532 - INFO - feature engineering initialized]
+[2026-08-10 17:14:53,532 - INFO - starting feature engineering...]
+[2026-08-10 17:14:53,938 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 17:14:54,183 - INFO - Data preprocessing initialized....]
+[2026-08-10 17:14:54,686 - ERROR - error occured when dropping duplicated values 'RootLogger' object has no attribute 'warming']
+[2026-08-10 17:14:54,686 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-10 17:14:54,686 - ERROR - error occurred during feature selection]
+[2026-08-10 17:14:54,687 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-10 17:14:54,687 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-10 17:14:54,687 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-10 19:57:36,211 - INFO - starting data loading process from the database file]
+[2026-08-10 19:57:43,625 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-10 19:57:43,626 - INFO - Data loading process complted successfull]
+[2026-08-10 19:57:43,626 - INFO - starting data validation process]
+[2026-08-10 19:57:43,626 - INFO - Data validation class initialized sucessfully.]
+[2026-08-10 19:57:43,627 - INFO - checking if the dataframe is empty]
+[2026-08-10 19:57:43,627 - INFO - The data frame is not empty. processing with validation]
+[2026-08-10 19:57:43,627 - INFO - checking for missing values in the datafram]
+[2026-08-10 19:57:44,050 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-10 19:57:44,050 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-10 19:57:45,035 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-10 19:57:45,036 - INFO - Data validation process completed successfully]
+[2026-08-10 19:57:45,037 - INFO - Data preprocessing initialized....]
+[2026-08-10 19:57:45,038 - INFO - starting the data preprocessing pipeline...]
+[2026-08-10 19:57:46,701 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-10 19:57:47,716 - INFO - data preprocessing completed.]
+[2026-08-10 19:57:47,717 - INFO - feature engineering initialized]
+[2026-08-10 19:57:47,717 - INFO - starting feature engineering...]
+[2026-08-10 19:57:48,097 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-10 06:00:00 2026-08-10 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-10 22:00:00 2026-08-11 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-10 19:57:48,355 - INFO - Data preprocessing initialized....]
+[2026-08-10 19:57:48,907 - ERROR - error occured when dropping duplicated values 'RootLogger' object has no attribute 'warming']
+[2026-08-10 19:57:48,907 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-10 19:57:48,907 - ERROR - error occurred during feature selection]
+[2026-08-10 19:57:48,908 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-10 19:57:48,908 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-10 19:57:48,908 - ERROR - error occured during features engineering initalization....]
+[2026-08-10 19:57:48,908 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-11 13:31:48,191 - INFO - starting data loading process from the database file]
+[2026-08-11 13:31:56,395 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-11 13:31:56,396 - INFO - Data loading process complted successfull]
+[2026-08-11 13:31:56,397 - INFO - starting data validation process]
+[2026-08-11 13:31:56,397 - INFO - Data validation class initialized sucessfully.]
+[2026-08-11 13:31:56,397 - INFO - checking if the dataframe is empty]
+[2026-08-11 13:31:56,398 - INFO - The data frame is not empty. processing with validation]
+[2026-08-11 13:31:56,398 - INFO - checking for missing values in the datafram]
+[2026-08-11 13:31:56,888 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-11 13:31:56,889 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-11 13:31:58,350 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-11 13:31:58,350 - INFO - Data validation process completed successfully]
+[2026-08-11 13:31:58,351 - INFO - Data preprocessing initialized....]
+[2026-08-11 13:31:58,352 - INFO - starting the data preprocessing pipeline...]
+[2026-08-11 13:32:00,269 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-11 13:32:01,735 - INFO - data preprocessing completed.]
+[2026-08-11 13:32:01,738 - INFO - feature engineering initialized]
+[2026-08-11 13:32:01,739 - INFO - starting feature engineering...]
+[2026-08-11 13:32:02,322 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-11 06:00:00 2026-08-11 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-11 22:00:00 2026-08-12 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-11 22:00:00 2026-08-12 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-11 22:00:00 2026-08-12 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-11 22:00:00 2026-08-12 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-11 13:32:02,824 - INFO - Data preprocessing initialized....]
+[2026-08-11 13:32:03,468 - ERROR - error occured when dropping duplicated values 'RootLogger' object has no attribute 'warming']
+[2026-08-11 13:32:03,469 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-11 13:32:03,469 - ERROR - error occurred during feature selection]
+[2026-08-11 13:32:03,469 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-11 13:32:03,469 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-11 13:32:03,470 - ERROR - error occured during features engineering initalization....]
+[2026-08-11 13:32:03,470 - ERROR - Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 86]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 76]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\features\feature_engineering.py, at line: 62]: Error occurred in file: [C:\Users\pc\Downloads\Nordex-shift-optimization-system\src\data\data_preprocessing.py, at line: 53]: 'RootLogger' object has no attribute 'warming']
+[2026-08-11 13:39:46,758 - INFO - starting data loading process from the database file]
+[2026-08-11 13:39:55,582 - INFO - First rows of the ingested data:
+   shift_id shift_name        start_time          end_time  ... inspection_result  temperature humidity            timestamp
+0         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+1         1    Morning  06:00:00.0000000  14:00:00.0000000  ...          Accepted         22.3     49.9  2024-01-01 08:00:00
+2         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+3         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+4         1    Morning  06:00:00.0000000  14:00:00.0000000  ...            Rework         22.3     49.9  2024-01-01 08:00:00
+
+[5 rows x 31 columns]]
+[2026-08-11 13:39:55,584 - INFO - Data loading process complted successfull]
+[2026-08-11 13:39:55,584 - INFO - starting data validation process]
+[2026-08-11 13:39:55,585 - INFO - Data validation class initialized sucessfully.]
+[2026-08-11 13:39:55,585 - INFO - checking if the dataframe is empty]
+[2026-08-11 13:39:55,586 - INFO - The data frame is not empty. processing with validation]
+[2026-08-11 13:39:55,586 - INFO - checking for missing values in the datafram]
+[2026-08-11 13:39:56,110 - WARNING - Missing value found in the dataframe: 
+ shift_id                       0
+shift_name                     0
+start_time                     0
+end_time                       0
+supervisor_id                  0
+production_id                  0
+date                           0
+units_produced                 0
+defect_count                   0
+cycle_time_avg                 0
+shift_efficiency_score         0
+operator_id                    0
+operator_name                  0
+experience_level               0
+skill_category                 0
+machine_id                     0
+runtime_hours                  0
+downtime_minutes               0
+maintenance_flag               0
+machine_status                 0
+maintenance_id            181103
+issue_type                181103
+maintenance_downtime      181103
+resolved_by               181103
+qc_id                          0
+defect_type                    0
+severity                       0
+inspection_result              0
+temperature                 1205
+humidity                    1205
+timestamp                   1205
+dtype: int64]
+[2026-08-11 13:39:56,110 - INFO - checking for duplicate rows in the dataframe]
+[2026-08-11 13:39:57,491 - INFO - No duplicate rows found in the dataframe.]
+[2026-08-11 13:39:57,493 - INFO - Data validation process completed successfully]
+[2026-08-11 13:39:57,494 - INFO - Data preprocessing initialized....]
+[2026-08-11 13:39:57,496 - INFO - starting the data preprocessing pipeline...]
+[2026-08-11 13:39:59,843 - INFO - shift_id                  0
+shift_name                0
+start_time                0
+end_time                  0
+supervisor_id             0
+production_id             0
+date                      0
+units_produced            0
+defect_count              0
+cycle_time_avg            0
+shift_efficiency_score    0
+operator_id               0
+operator_name             0
+experience_level          0
+skill_category            0
+machine_id                0
+runtime_hours             0
+downtime_minutes          0
+maintenance_flag          0
+machine_status            0
+issue_type                0
+maintenance_downtime      0
+resolved_by               0
+qc_id                     0
+defect_type               0
+severity                  0
+inspection_result         0
+temperature               0
+humidity                  0
+timestamp                 0
+data                      0
+dtype: int64]
+[2026-08-11 13:40:01,538 - INFO - data preprocessing completed.]
+[2026-08-11 13:40:01,539 - INFO - feature engineering initialized]
+[2026-08-11 13:40:01,539 - INFO - starting feature engineering...]
+[2026-08-11 13:40:02,003 - INFO -       shift_id shift_name          start_time            end_time  ... shift_duration  defect_rate downtime_ratio  day_of_week
+0            1    Morning 2026-08-11 06:00:00 2026-08-11 14:00:00  ...            8.0     0.021529       0.032063            0
+2308         3      Night 2026-08-11 22:00:00 2026-08-12 06:00:00  ...            8.0     0.039623       0.111937            0
+2309         3      Night 2026-08-11 22:00:00 2026-08-12 06:00:00  ...            8.0     0.044990       0.108125            0
+2310         3      Night 2026-08-11 22:00:00 2026-08-12 06:00:00  ...            8.0     0.044990       0.108125            0
+2311         3      Night 2026-08-11 22:00:00 2026-08-12 06:00:00  ...            8.0     0.044990       0.108125            0
+
+[5 rows x 35 columns]]
+[2026-08-11 13:40:02,416 - INFO - Data preprocessing initialized....]
+[2026-08-11 13:40:02,955 - WARNING - removing 119015 duplicated rows]
+[2026-08-11 13:40:03,584 - INFO - Dropped unwanted columns and removed duplicates]
+[2026-08-11 13:40:03,584 - INFO -      shift_name  units_produced  defect_count  cycle_time_avg  ...  humidity       data defect_rate  day_of_week
+0       Morning             929            20           35.65  ...      49.9 2024-01-01    0.021529            0
+2308      Night             530            21           35.61  ...      49.9 2024-01-01    0.039623            0
+2309      Night             489            22           34.01  ...      49.9 2024-01-01    0.044990            0
+2310      Night             489            22           34.01  ...      49.9 2024-01-01    0.044990            0
+2311      Night             489            22           34.01  ...      49.9 2024-01-01    0.044990            0
+
+[5 rows x 21 columns]]
+[2026-08-11 13:40:03,645 - INFO - feature engineering completed]
+[2026-08-11 13:40:03,645 - INFO - Data preprocessing initialized....]
+[2026-08-11 13:40:03,833 - INFO - Training and testing split completed]
