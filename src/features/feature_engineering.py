@@ -35,7 +35,7 @@ class Feature_Engineering:
 
             # defect ratio
             self.shift_data['defect_rate'] = self.shift_data['defect_count'] / self.shift_data['units_produced'].replace(0, pd.NA)
-
+            self.shift_data['total_machine_hours'] = self.shift_data['runtime_hours'] + (self.shift_data['downtime_minutes'] / 60)
             # downtime ratio
             self.shift_data['downtime_ratio'] = self.shift_data['downtime_minutes'] / (self.shift_data['shift_duration'] * 60)
 
@@ -97,12 +97,6 @@ def start_feature_engineering(shift_data: pd.DataFrame):
                
             
          
-shift_data = load_data()
-Validated_data = validate_data(shift_data)
-Processed_data = start_data_preprocessing(Validated_data)
-X_train, X_test, y_train, y_test = start_feature_engineering(Processed_data)
-print("feature engineering completed...")
-print (X_train.head())
-print(X_test.head)
+
 
 start_feature_engineering
