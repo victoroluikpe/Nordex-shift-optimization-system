@@ -72,34 +72,3 @@ class ModelTrainer:
             logging.error(f"error during model evaluation {str(e)}")
             raise MyException(e, sys)
          
-def start_model_training():
-    try:
-        shift_data = load_data()
-        Validated_data = validate_data(shift_data)
-        Processed_data = start_data_preprocessing(Validated_data)
-        X_train, X_test, y_train, y_test = start_feature_engineering(Processed_data)
-        print("feature engineering completed...")
-        logging.info("Intializing model training...")
-        trainer = ModelTrainer(X_train, X_test, y_train, y_test)
-        Pipeline = trainer.train_model()
-        r2, mae = trainer.evaluate_model()
-        logging.info("model Training completed and preparing to be tracked..")
-        model_tracker = ModelTracker()
-        was_registered = model_tracker.push_model(
-            model = Pipeline,
-            r2_score= r2,
-            mae_score= mae
-        )
-        if was_registered:
-            logging.info("New pipeline registered to mlflow..")
-        else:
-            logging.info("Existing model has a better performance than the new pipeline.. ")
-
-        return r2, mae, Pipeline        
-                     
-    except Exception as e:
-        raise MyException(e, sys)
-
-
-
-start_model_training()
