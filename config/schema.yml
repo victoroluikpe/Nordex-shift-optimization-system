@@ -10,10 +10,18 @@ columns:
     - resolved_by
     - timestamp
     - start_time 
-    - end_time 
+    - end_time     
     - date
+    - data
     - shift_duration
     - downtime_ratio
+    - issue_type
+    - defect_type
+    - severity
+    - inspection_result
+    - total_machine_hours
+    
+    
 
   numerical_columns:
     - units_produced
@@ -25,16 +33,12 @@ columns:
     - maintenance_flag
     - maintenance_downtime
     - temperature
-    - humidity
-    - total_machine_hours
-    - defect_rate
-    - day_of_week  
+    - humidity  
+    - day_of_week
+    - defect_rate  
 
   categorical_columns:
     - shift_name
     - skill_category
     - machine_status
-    - issue_type
-    - defect_type
-    - severity
-    - inspection_result  
+  

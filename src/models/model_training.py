@@ -72,3 +72,4 @@ class ModelTrainer:
             logging.error(f"error during model evaluation {str(e)}")
             raise MyException(e, sys)
          
+# start_model_training()

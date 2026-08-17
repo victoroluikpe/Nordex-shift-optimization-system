@@ -54,7 +54,7 @@ def load_model_from_mlflow(model_name = "NordexShiftOptimizationModel"):
 
         latest_version = latest_versions[0].version
 
-        model_uri = f"models:/{model_name}/ {latest_version}"
+        model_uri = f"models:/{model_name}/{latest_version}"
 
         model = mlflow.pyfunc.load_model(model_uri)
 

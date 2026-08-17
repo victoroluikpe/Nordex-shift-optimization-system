@@ -30,37 +30,28 @@ def load_model_on_startup():
         raise MyException(e, sys)    
 
 class ShiftInput(BaseModel):
-    units_produced: input
+    units_produced: int
     defect_count: int
     cycle_time_avg: float
-    experience_level: input
+    experience_level: int
     runtime_hours: float
     downtime_minutes: float
     maintenance_flag: int
     maintenance_downtime: float
     temperature: float
     humidity: float
-    total_machine_hours: float
-    defect_rate: float
+    defect_rate: int
     day_of_week: int  
     shift_name: str
     skill_category: str
     machine_status: str
-    issue_type: str
-    defect_type: str
-    severity: str
-    inspection_result: str
-
-
+    
+    
 class OptimizationInput(BaseModel):
     shift_name: str
     skill_category: str
     machine_status: str
-    issue_type: str
-    defect_type: str
-    severity: str
-    inspection_result: str
-
+      
     exp_range: tuple[int, int]
     downtime_range: tuple[float, float]
     defect_range: tuple[int, int]
@@ -88,97 +79,7 @@ def predict_shift_efficiency_score(input: ShiftInput):
         logging.error(f"prediction failed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-
-# 0ptimization section
-@app.post("/optimization")
-def optimize_shift(input: OptimizationInput):
-    try:
-        if model is None:
-            raise Exception("model not loaded....")
-
-        def objective(trial):
-            experience_level = trial.suggest_int(
-                "experience_level",
-                input.exp_range[0],
-                input.exp_range[1]
-            )
-            downtime_minutes = trial.suggest_int(
-                "downtime_minutes",
-                input.downtime_range[0],
-                input.downtime_range[1]
-            )
-            defect_count = trial.suggest_int(
-                "defect_count",
-                input.defect_range[0],
-                input.defect_range[1]
-            )
-            units_produced = trial.suggest_int(
-                "units_produced", 600, 1200
-            )
-            maintenance_flag = trial.suggest_int(
-                "maintenance_flag", [0, 1]
-            )
-            maintenance_downtime = trial.suggest_int("maintenance_downtime", 0, 60)
-            cycle_time_avg = trial.suggest_float("cycle_time_avg", 30, 45)
-            temperature = trial.suggest_float("temperature", 18, 30)
-            humidity = trial.suggest_float("humidity", 30, 70)
-            runtime_hours = 7.5
-            total_machine_hours = runtime_hours
-            shift_duration = runtime_hours
-            day_of_week = datetime.datetime.today().weekday()
-            defect_rate = trial.suggest_float("defect_rate", 0, 2)
-            hour_of_day = trial.suggest_int("hour_of_day", 0, 23)
-            skill_category = input.skill_category
-            machine_status = input.machine_status
-            issue_type = input.issue_type
-            defect_type = input.defect_type
-            severity = input.severity
-            inspection_result = input.inspection_result
-
-            data = {
-                "experience_level": experience_level,
-                "downtime_minutes": downtime_minutes,
-                "defect_count": defect_count,
-                "units_produced": units_produced,
-                "maintenance_flag": maintenance_flag,
-                "maintenance_downtime": maintenance_downtime,
-                "cycle_time_avg": cycle_time_avg,
-                "temperature": temperature,
-                "humidity": humidity,
-                "total_machine_hours": total_machine_hours,
-                "shift_duration": shift_duration,
-                "day_of_week": day_of_week,
-                "defect_rate": defect_rate,
-                "hour_of_day": hour_of_day,
-                "skill_category": skill_category,
-                "machine_status": machine_status,
-                "issue_type": issue_type,
-                "defect_type": defect_type,
-                "severity": severity,
-                "inspection_resul": inspection_result
-            }
-
-            pred = prediction_pipeline(data, model)
-
-            return pred[0]
-
-        
-        study = optuna.create_study(direction="maximize")
-        study.Optimize(objective, n_trials=input.n_trial)
-
-        return {
-            "best_parameter": study.best_params,
-            "best_score": study.best_value,
-            "top_trials": study.trials_dataframe()
-            .sort_values("value", ascending=False)
-            .head(10)
-            .to_dict(orient="records")
-        }
-
-    except Exception as e:
-        logging.error(f"error occurred during optimization process...")
-        raise HTTPException(status_code=500, detail=str(e))
-
+# training pipeline
 def retrain_pipeline():
     global model
     try:
@@ -196,7 +97,130 @@ def retrain_model():
 
     return {
         "message": "Threading started in background, model will be updated automatically"
-    }       
+    }
+
+
+# 0ptimization section
+@app.post("/optimize")
+def optimize_shift(input: OptimizationInput):
+    try:
+        if model is None:
+            raise Exception("model not loaded from mlflow")
+
+        def objective(trial):
+            experience_level = trial.suggest_int(
+                "experience_level",
+                input.exp_range[0],
+                input.exp_range[1]
+            )
+            downtime_minutes = trial.suggest_float(
+                "downtime_minutes",
+                input.downtime_range[0],
+                input.downtime_range[1]
+            )
+            defect_count = trial.suggest_int(
+                "defect_count",
+                input.defect_range[0],
+                input.defect_range[1]
+            )
+            units_produced = trial.suggest_int(
+                "units_produced",
+                600,
+                1200
+            )
+            maintenance_flag = trial.suggest_categorical(
+                "maintenance_flag",
+                [0, 1]
+            )
+            maintenance_downtime = trial.suggest_float(
+                "maintenance_downtime",
+                0,
+                120
+            )
+            cycle_time_avg = trial.suggest_float(
+                "cycle_time_avg",
+                30,
+                45
+            )
+            temperature = trial.suggest_float(
+                "temperature",
+                18,
+                30
+            )
+            humidity = trial.suggest_float(
+                "humidity",
+                30,
+                70
+            )
+            runtime_hours = 7.5
+            shift_duration = runtime_hours
+            day_of_week = datetime.datetime.today().weekday()
+
+                    
+
+            data = {
+                "experience_level": experience_level,
+                "downtime_minutes": downtime_minutes,
+                "defect_count": defect_count,
+                "units_produced": units_produced,
+                "maintenance_flag": maintenance_flag,
+                "maintenance_downtime": maintenance_downtime,
+                "cycle_time_avg": cycle_time_avg,
+                "temperature": temperature,
+                "humidity": humidity,
+                "shift_duration": shift_duration,
+                "day_of_week": day_of_week,
+                "skill_category": input.skill_category,
+                "machine_status": input.machine_status,
+                "runtime_hours": runtime_hours,
+                "shift_name": input.shift_name
+                
+            }
+
+            pred = prediction_pipeline(data, model)
+
+            shift_efficiency_score = float(pred[0])
+
+            return shift_efficiency_score
+
+        
+        study = optuna.create_study(
+            direction="maximize"
+        )
+
+        study.Optimize(
+            objective,
+            n_trials=input.n_trials
+        )
+
+        top_trials = (
+            study.trials_dataframe()
+            .sort_values("value", ascending=False)
+            .head(10)
+            .to_dict(orient="records")
+        )
+
+        return {
+            "best_parameters": study.best_params,
+            "best_shift_efficiency_score": float(study.best_value),
+            "top_trials": top_trials
+        }    
+        
+        
+
+    except Exception as e:
+
+        logging.error(
+            f"optimization failed: {e}"
+        )
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
+
+
+
+       
 
 
     

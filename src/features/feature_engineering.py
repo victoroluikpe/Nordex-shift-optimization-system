@@ -43,7 +43,7 @@ class Feature_Engineering:
             self.shift_data['date'] = pd.to_datetime(self.shift_data['date']) # first do this conversion for the nxt line to work!
             self.shift_data['day_of_week'] = self.shift_data['date'].dt.dayofweek
 
-            logging.info(self.shift_data.head())
+            logging.info(self.shift_data.columns)
 
             return self.shift_data
         except Exception as e:
@@ -62,7 +62,7 @@ class Feature_Engineering:
             self.shift_data = processor.remove_duplicates()
 
             logging.info("Dropped unwanted columns and removed duplicates")
-            logging.info(self.shift_data.head())
+            logging.info(self.shift_data.columns)
             return self.shift_data
 
         except Exception as e:
