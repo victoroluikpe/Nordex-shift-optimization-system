@@ -1,7 +1,7 @@
 # Byte-co
 nordex-env/
 data_artifact/
-
+.env
 
 mpiled / optimized / DLL files
 __pycache__/

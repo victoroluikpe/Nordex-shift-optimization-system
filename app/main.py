@@ -55,8 +55,7 @@ class OptimizationInput(BaseModel):
     exp_range: tuple[int, int]
     downtime_range: tuple[float, float]
     defect_range: tuple[int, int]
-
-    n_trial: int
+    n_trials: int
 
 @app.get("/")
 def health_check():
@@ -123,6 +122,11 @@ def optimize_shift(input: OptimizationInput):
                 input.defect_range[0],
                 input.defect_range[1]
             )
+            
+            defect_rate = trial.suggest_float(
+                "defect_rate",
+                0,1
+            )
             units_produced = trial.suggest_int(
                 "units_produced",
                 600,
@@ -168,6 +172,7 @@ def optimize_shift(input: OptimizationInput):
                 "cycle_time_avg": cycle_time_avg,
                 "temperature": temperature,
                 "humidity": humidity,
+                "defect_rate": defect_rate,
                 "shift_duration": shift_duration,
                 "day_of_week": day_of_week,
                 "skill_category": input.skill_category,
@@ -188,7 +193,7 @@ def optimize_shift(input: OptimizationInput):
             direction="maximize"
         )
 
-        study.Optimize(
+        study.optimize(
             objective,
             n_trials=input.n_trials
         )

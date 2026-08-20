@@ -71,5 +71,6 @@ class ModelTrainer:
         except Exception as e:
             logging.error(f"error during model evaluation {str(e)}")
             raise MyException(e, sys)
-         
-# start_model_training()
+
+
+        
